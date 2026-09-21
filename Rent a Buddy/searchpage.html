@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="AKA-Group">
+        <meta name="description" content="Rent a Person you need in one click">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/searchpage.css">
+        <title>Rent a Buddy</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="navbar-Brand" href="#" style="padding-right: 10px;">
+                <img src="assets/icons/Logo.png" alt="" width="141px" height="50px">
+              </div>
+              <div class="navbar-Brand" href="#" style="padding-right: 30px;">
+                <h1></h1>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon h3 text-light">&#9776</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav_button me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="Home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" style="border-bottom: solid 1px black;" href="#">Explore</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="AboutLogin.html">About</a>
+                  </li>
+                  
+                </ul>
+                
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/icons/Account-icon.png" alt="hello" width="40px" height="40px">
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><img src="assets/icons/Account-icon.png"  id="account_profile" alt="" width="40px" height="40px"></li>
+                        <li><h5 class="text-center" id="account_name">User</h5></li>
+                        <li class="dropdown-divider"><hr></li>
+                        <li><a class="dropdown-item text" href="#">Cart</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li><a class="dropdown-item" href="loginpage.html" style="color: rgb(255, 0, 0);">&#11122 Sign Out</a></li>
+                        <!-- &#11120 - for sign out exit icon -->
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+
+
+          <main class="container">
+            <div class="row">
+              <div class="side_bar col-md-3">
+                <div class="title_holder mt-2 mb-2">
+                  <h1>Sort Content</h1>
+                </div>
+                  <form id="form_holder">
+                    <div class="form">
+                      <div class="checkbox_holder col-md-12 mb-2">
+                        <input type="checkbox" id="korean">
+                        <label for="korean" class="form-check-label">Male</label>
+                      </div>
+                      <div class="checkbox_holder col-md-12 mb-2 mt-2">
+                        <input type="checkbox" id="japanese">
+                        <label for="japanese" class="form-check-label">Female</label>
+                      </div>
+                      <div class="checkbox_holder col-md-12 mb-2 mt-2">
+                        <input type="checkbox" id="cheap_expensive">
+                        <label for="cheap_expensive" class="form-check-label">LGBTQIA++</label>
+                      </div>
+                      <div class="checkbox_holder col-md-12 mb-2 mt-2">
+                        <input type="checkbox" id="expensive_cheap">
+                        <label for="expensive_cheap" class="form-check-label">Cheapest-Expensive</label>
+                      </div>
+                      <div class="title_holder mt-2 mb-2">
+                        <h1>Filter Content by Category</h1>
+                      </div>
+                      <div class="checkbox_holder col-md-12 mb-2 mt-2">
+                        <input type="checkbox" id="meal">
+                        <label for="meal" class="form-check-label">Asian</label>
+                      </div>
+                      <div class="checkbox_holder col-md-12 mb-2 mt-2">
+                        <input type="checkbox" id="desserts">
+                        <label for="desserts" class="form-check-label">Filipino</label>
+                      </div>
+                      <div class="checkbox_holder col-md-12 mb-2 mt-2">
+                        <input type="checkbox" id="pastries">
+                        <label for="pastries" class="form-check-label">American</label>
+                      </div>
+                      <div class="checkbox_holder col-md-12 mb-2 mt-2">
+                        <input type="checkbox" id="breakfast">
+                        <label for="breakfast" class="form-check-label">European</label>
+                      </div>
+                      <div class="checkbox_holder col-md-12 mb-2 mt-2">
+                        <input type="checkbox" id="lunch">
+                        <label for="lunch" class="form-check-label">Australian</label>
+                      </div>
+                      <div class="checkbox_holder col-md-12 mb-2 mt-2">
+                        <input type="checkbox" id="dinner">
+                        <label for="dinner" class="form-check-label">Black</label>
+                      </div>
+                      
+                      <button type="button" class="btn" id="reset_button" onclick="reset_filter()">Reset</button>
+                    </div>
+                  </form>
+              </div>
+              <div class="main_content col-md-9 mt-2">
+                <div class="container">
+                  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                      class="active bg-light" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                      aria-label="Slide 2" class="bg-light"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                      aria-label="Slide 3" class="bg-light"></button>
+              </div>
+              <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                      <img src="assets/images/Home/carousel/carousel1.png" class="d-block w-100" alt="Car1" width="100%" height="100%">
+                      <div class="carousel-caption d-none d-md-block side">
+                          <h5 class="text-start fw-bold">Find Friends</h5>
+                          <p class="text-start col-md-8">Explore different kinds of People.</p>
+                          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                              <!-- <a class="btn me-md-2" href="searchpage.html" onclick="javascript:jap_or_kor = 'japanese';chosen_content();"></a> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                      <img src="assets/images/Home/carousel/carousel2.png" class="d-block w-100" alt="Car2" width="100%" height="100%">
+                      <div class="carousel-caption d-none d-md-block align-center">
+                          <!-- <h5 class="text-center fw-bold">Gallery</h5>
+                          <p class="text-center">Take a look in the pictures that i took from my life</p>
+                          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                              <a class="btn btn-primary me-md-2" href="#gallery">Go To Gallery?</a>
+                          </div> -->
+                      </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                      <img src="assets/images/Home/carousel/carousel3.png" class="d-block w-100" alt="Car3" width="100%" height="100%">
+                      <div class="carousel-caption d-none d-md-block side">
+                          <h5 class="text-end t  fw-bold">Hire Your Buddy</h5>
+                          <p class="text-end">Hire people to became your Buddy.</p>
+                          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <!-- <a class="btn  me-md-2" href="searchpage.html" onclick="javascript:jap_or_kor = 'korean';chosen_content();">Learn More?</a> -->
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev">
+                  <span class="text-dark h1" aria-hidden="true">&#10092</span>
+                  <span class="visually-hidden ">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next">
+                  <span class="text-dark h1" aria-hidden="true">&#10093</span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+                </div>
+                
+                <div class="content_holder container">
+                  <!-- <form class="d-flex mt-3 mb-3" id="searchForm" method="GET">
+                    <input type="text" class="form-control me-2" id="user_input" placeholder="Search..." aria-label="Search">
+                  </form> -->
+                  <form class="d-flex mt-4" id="searchForm" action="" method="GET">
+                    <input type="search" class="form-control me-2" id="user_input" placeholder="Search..." aria-label="Search">
+                    <button type="button" id="button" class="btn text-light" onclick="find_content();">&#128270</button>
+                  </form>
+                  <p class="search_title mt-3 mb-3">Showing Related Content For: <span style="font-weight: bold;" id="searched_text"></span> </p>
+                  <div class="main_object_content_holder">
+                    <div class="container row" id="cuisine_holder" >
+                      <hr class="mb-3">
+
+                      <!-- <div class="card_holder mt-3 col-md-3">
+                        <a href="#" onclick="javascript:content_of_full_page = 'makizsuhi';dothis();">
+                            <div class="content_holder">
+                              <div class="img_holder">
+                                <img src="Images/foods_images/japanese_cuisine/meal/makizushi.jpeg">
+                              </div>
+                              <div class="title_holder_and_Context_holder">
+                                <h3 class="mb-4">Makizushi</h3>
+                                <p>₱450.00</p>
+                              </div>
+                            </div>
+                        </a>
+                      </div> -->
+                      
+                      
+                      
+
+
+
+                    </div>
+                    <div class="end_text mt-5 mb-5">
+                      <h1 id="end_text"></h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="container-fluid">
+            <div class="title_holder">
+              <h1>Japean</h1>
+              <div class="contextholder">
+                <p>Your all in one Website for Buying Korean and Japanese Cuisines in the Philippines</p>
+              </div>
+            </div>
+            <div class="socials_and_branch_holder">
+              <div class="socials">
+                <div class="title">
+                  <h1>Socials</h1>
+                </div>
+                <div class="social_link_holder">
+                  <a href="#" class="btn">Facebook</a>
+                </div>
+                <div class="social_link_holder">
+                  <a href="#" class="btn">Instagram</a>
+                </div>
+                <div class="social_link_holder">
+                  <a href="#" class="btn">TikTok</a>
+                </div>
+                <div class="social_link_holder">
+                  <a href="#" class="btn">X</a>
+                </div>
+                <div class="social_link_holder">
+                  <a href="#" class="btn">Email</a>
+                </div>
+                <div class="social_link_holder">
+                  <a href="#" class="btn">Telegram</a>
+                </div>
+                <div class="social_link_holder">
+                  <a href="#" class="btn">Contact Number</a>
+                </div>
+              </div>
+              <div class="branch">
+                <div class="title">
+                  <h1>Branches</h1>
+                </div>
+                <div class="branch_holder">
+                  <p>Metro Manila</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Cagayan De Oro</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Bataan</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Leyte</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Pampanga</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Bacolod</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Quezon City</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Cabanatuan City</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Cebu Cuty</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Tuguegarao</p>
+                </div>
+                <div class="branch_holder">
+                  <p>ilo-ilo City</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Laoag City</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Davao City</p>
+                </div>
+                <div class="branch_holder">
+                  <p>Olongapo</p>
+                </div>
+                <div class="branch_holder">
+                  <p>General Santos</p>
+                </div>
+
+
+              </div>
+            </div>
+          </footer>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/searchpage.js"></script>
+    </body>
+</html>

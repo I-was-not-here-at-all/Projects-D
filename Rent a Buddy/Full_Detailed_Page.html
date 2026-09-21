@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="AKA-Group">
+        <meta name="description" content="Rent a Person you need in one click">
+        <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/full_page.css">
+        
+        <title>Rent a Buddy</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="navbar-Brand" href="#" style="padding-right: 10px;">
+                <img src="assets/icons/Logo.png" alt="" width="141px" height="50px">
+              </div>
+              <div class="navbar-Brand" href="#" style="padding-right: 30px;">
+                <h1></h1>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon h3 text-light">&#9776</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav_button me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="searchpage.html">Explore</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="AboutLogin.html">About</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" id="searchForm" action="" method="GET">
+                  <input type="text" class="form-control me-2" id="user_input" placeholder="Search..." aria-label="Search">
+                  <button type="button" id="button" class="btn text-light" onclick="get_data()">&#128270</button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/icons/Account-icon.png" alt="hello" width="40px" height="40px">
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><img src="assets/icons/Account-icon.png"  id="account_profile" alt="" width="40px" height="40px"></li>
+                        <li><h5 class="text-center" id="account_name">User</h5></li>
+                        <li class="dropdown-divider"><hr></li>
+                        <li><a class="dropdown-item text" href="#">Edit Account</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li><a class="dropdown-item" href="loginpage.html" style="color: rgb(255, 0, 0);">&#11122 Sign Out</a></li>
+                        <!-- &#11120 - for sign out exit icon -->
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+          <main class="container">
+            <div class="row">
+                <div class="col-md-5 box1">
+                  <div class="btn_back_holder">
+                    <a class="btn" onClick="history.go(-1); return false;" >Back</a>
+                  </div>
+                    <div class="row">
+                      <div class="img_holder">
+                        <img src="Images/foods_images/japanese_cuisine/meal/kani_sashimi.jpg" id="img" alt="">
+                      </div>
+                      <div class="transaction_holder">
+                        <div class="transactions">
+                          <h1 class="mt-3 mb-3">Payment Method:</h1>
+
+                          <div class="method_holder mt-5">
+                            <form>
+                              <div class="payments">
+                                <div class="checkbox_holder">
+                                  <input type="checkbox" id="credit" class="form-check-input">
+                                  <label class="form-label">Credit Card</label>
+                                </div>
+                                <div class="img1">
+                                  <img src="assets/icons/visa_icon2.png" width="100%" height="100%" alt="">
+                                </div>
+                                <div class="img2">
+                                  <img src="assets/icons/visa_icon.png" width="100%" height="100%" alt="">
+                                </div>
+                                <div class="text">
+                                  <p>and more...</p>
+                                </div>
+                                
+                                
+                              </div>
+                              <div class="payments">
+                                <div class="checkbox_holder">
+                                  <input type="checkbox" id="paypal" id="paypal" class="form-check-input">
+                                  <label class="form-label">PayPal</label>
+                                </div>
+                                
+                                <div class="img2">
+                                  <img src="assets/icons/paypal_icon.png" width="100%" height="100%" alt="">
+                                </div>
+                                
+                              </div>
+                              <div class="payments">
+                                <div class="checkbox_holder">
+                                  <input type="checkbox" id="gcash" class="form-check-input">
+                                  <label class="form-label">GCash</label>
+                                </div>
+                                
+                                <div class="img2">
+                                  <img src="assets/icons/Gcash_icon.png" width="100%" height="100%" alt="">
+                                </div>
+                              </div>
+                              <div class="payments">
+                                <div class="checkbox_holder">
+                                  <input type="checkbox" id="maya" class="form-check-input">
+                                  <label class="form-label">Maya</label>
+                                </div>
+                                
+                                <div class="img2">
+                                  <img src="assets/icons/maya_icon.png" width="100%" height="100%" alt="">
+                                </div>
+                              </div>
+                            
+
+                              <div class="btn_holder">
+                                <a href="#" class="btn">Hire Now?</a>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      
+                        
+                    </div>
+                </div>
+                <div class="col-md-7 box2">
+                    <div class="content_holder">
+                        <div class="col-md-12 main_content" id="">
+                            <div class="description_holder">
+                            <h1>Information:</h1>
+                            <h1 id="title">Kani Sashimi</h1>
+                            <div class="context_holder">
+                              <p id="description">blabla</p>
+                            </div>
+                            </div>
+                            <h3>Rent Price:</h3>
+                            <p id="price">hi</p>
+                        </div>
+                        
+                        
+                            <div class="end_text mt-5 mb-5">
+                              <h1 id="end_text"></h1>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+          </main>
+          <footer class="container-fluid">
+            
+          </footer>
+          
+          <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <script src="js/script.js"></script>
+          <script src="js/full_page.js"></script>
+    </body>
+</html>

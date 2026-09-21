@@ -1,0 +1,98 @@
+:root {
+    --padding:40px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffffff;
+}
+.container .form_tag .register_holder {
+    background-color: rgb(255, 255, 255);
+}
+
+.container .form_tag .register_holder .row .side_img {
+    background-image: url(../assets/images/Registration/BG-Registration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .form_tag .register_holder .row .side_img .context_holder {
+    color: rgb(249, 234, 234);
+    font-size: 30pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 130px;
+}
+.container .form_tag .register_holder .row .registration_input_holder {
+    margin-top: 40px;
+    padding-bottom: 125.6px;
+}
+.container .form_tag .register_holder .row .registration_input_holder .row{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.container .form_tag .register_holder .row .contact_number_holder .contact_number_input_holder {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    
+}
+.container .form_tag .register_holder .row .contact_number_holder .contact_number_input_holder .select_holder {
+    width: max-content;
+    grid-column: 1 / 1;
+}
+.container .form_tag .register_holder .row .contact_number_holder .contact_number_input_holder .select_holder select{
+    border: rgba(128, 128, 128, 0.51) solid 1px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(11, 11, 11, 0.89);
+    height: 38px;
+    padding-top: 2px;
+    font-weight: lighter;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.container .form_tag .register_holder .row .contact_number_holder .contact_number_input_holder .input_holder {
+    grid-column: 2 / 2;
+}
+.container .form_tag .register_holder .row .contact_number_holder .contact_number_input_holder .input_holder input{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: none;   
+}
+.container .form_tag .register_holder .row .buttons_holder .terms_of_services_holder {
+    margin-left: 40px;
+    margin-top: -25px;
+}
+.container .form_tag .register_holder .row .buttons_holder .terms_of_services_holder .checkbox_holder{
+    margin-left: 50px;
+}
+
+
+.container .form_tag .register_holder .row .main-button .register_holder button {
+    width:250px;
+    height: 50px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 540px;
+    font-size: 20pt;
+    background-color: #e6008d;
+    color: rgb(249, 234, 234);
+    border-radius: 15px;
+    border: black solid 1px;
+    transition: all .05s ease-in;
+}
+.container .form_tag .register_holder .row .main-button .register_holder button:hover {
+    background-color: rgb(255, 255, 255);
+    border: #e6008d solid 1px;
+    color: black;
+
+}
+.container .form_tag .register_holder .row .buttons_holder .cancel_holder label {
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+

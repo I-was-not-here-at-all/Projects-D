@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffffff;
+}
+.container {
+    padding: 0;
+}
+.container .row .side_design {
+    height: 40.4em;
+    background-image: url(../assets/images/Login/Login-BG.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+.container .row .side_design .img .context_holder{
+    color: rgb(249, 234, 234);
+    width: 450px;
+    margin-top: 100px;
+    text-align: justify;
+}
+.container .row .side_design .img .context_holder h1 {
+    font-size: 25pt;
+    font-family: Arial rgb(249, 234, 234);
+}
+.container .row .side_design .img .join_holder {
+    color: rgb(249, 234, 234);
+    margin-top: -300px;
+}
+
+.container .row .side_design .img .join_holder .register_btn a {
+    font-size: 15pt;
+    background-color: #e6008d;
+    color: rgb(255, 255, 255);
+    transform: translateY(300px);  
+    border-radius: 15px;
+    width: 150px;
+    border: 1px solid black;
+}
+.container .row .side_design .img .join_holder .register_btn a:hover {
+    background-color: #ffffff;
+    color: fuchsia;
+    border: 1px solid fuchsia;
+}
+.container .row .form_holder {
+    padding: 20px;
+    background-color: white;
+    right: 20px;
+    padding-right: 55px;
+}
+
+.container .row .form_holder .buttons .btn {
+    background-color: #e6008d;
+    color: rgb(249, 234, 234);
+    border: black 1px solid;
+    border-radius: 12px;
+}
+.container .row .form_holder .buttons .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid #e6008d;
+}
+.container .row .form_holder .login_text {
+    margin-top: 35%
+}
+.container .row .form_holder .buttons a {
+    font-size: 15pt;
+    width: 200px;
+}
+/* .container .row .form_holder .login_label {
+    
+} */
+
+.container .return_holder {
+    position: absolute;
+    top: 0px;
+    width: max-content;
+    margin-top: 75px;
+    margin-left: -10px;
+}
+.container .return_holder a {
+    background-color: #e6008d;
+    font-size: 15pt;
+    color: rgb(249, 234, 234);
+    border: black 1px solid;
+    transition: all .05s ease-in;
+}
+.container .return_holder a:hover {
+    background-color: rgb(249, 234, 234);
+
+    color: black;
+    border: #e6008d 1px solid;
+}
+.container .row .form_holder .text_box {
+    transition: all 200ms ease-in-out;
+}

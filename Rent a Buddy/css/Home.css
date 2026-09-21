@@ -1,0 +1,120 @@
+
+
+
+/* carousel */
+main .carousel .carousel-inner .carousel-item {
+    height: 479px;
+    margin-top: 80px;
+    border: rgba(167, 163, 163, 0.97) 3px solid;
+    border-radius: 20px;
+}
+main .carousel .carousel-inner .carousel-item img{
+    border-radius: 20px;
+}
+
+main .carousel .carousel-inner .carousel-item .side {
+    top: 45%;
+    translate: -20% inherit;
+}
+
+main .carousel  .carousel-inner .carousel-item .carousel-caption h5 {
+    color: black;
+    font-size: 25pt;
+
+}
+
+main .carousel .carousel-inner .carousel-item .carousel-caption p {
+    color: black;
+    font-size: 20pt;
+}
+main .carousel .carousel-inner .carousel-item .d-grid a {
+    background-color: #55924f;
+    color: rgb(249, 234, 234);
+    border: black 1px solid;
+}
+main .carousel .carousel-inner .carousel-item .d-grid a:hover {
+    background-color: #ffffff;
+    color: black;
+    border: #55924f 1px solid;
+}
+
+
+
+/* Categories */
+
+
+main .context_parent {
+
+}
+main .context_parent .context_holder {
+    
+    padding: 20px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+}
+
+main .context_parent .context_holder .context1 {
+    width: 600px;
+    background-color: #ff3870a4;
+    height: 350px;
+    grid-column: 1/1;
+    
+   
+}
+
+main .context_parent .context_holder .context2 {
+    width: 500px;
+    background-color: #ff3870a4;
+    height: 550px;
+    grid-column: 2/2;
+    
+}
+
+/* Best Selling */
+main .bestselling {
+    height: 100vh;
+}
+main .bestselling .bestselling_holder{
+    border: black 2px solid;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+main .bestselling .bestselling_holder .card_holder{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 380px;
+    
+}
+main .bestselling .bestselling_holder .card_holder a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+main .bestselling .bestselling_holder .card_holder a .content_holder{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 10px 150px 30px 1fr;
+    grid-template-columns: 20px 1fr 20px;
+    border: black solid 2px;
+}
+main .bestselling .bestselling_holder .card_holder a .content_holder .img_holder{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+main .bestselling .bestselling_holder .card_holder a .content_holder .title_holder_and_Context_holder{
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+main .bestselling .bestselling_holder .card_holder a .content_holder .title_holder_and_Context_holder p{
+    font-size: 17pt;
+}
+

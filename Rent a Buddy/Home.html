@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="AKA-Group">
+        <meta name="description" content="Rent a Person you need in one click">
+        <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/Home.css">
+        <!-- Main Page Do Not Touch Property Of Mark -->
+        <title>Rent a Buddy</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="navbar-Brand" href="#" style="padding-right: 10px;">
+                <img src="assets/icons/Logo.png" alt="" width="141px" height="50px">
+              </div>
+              <div class="navbar-Brand" href="#" style="padding-right: 30px;">
+                <h1></h1>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon h3 text-light">&#9776</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav_button me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" style="border-bottom: solid 1px black;" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="searchpage.html">Explore</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="AboutLogin.html">About</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" id="searchForm" action="" method="GET">
+                  <input type="text" class="form-control me-2" id="user_input" placeholder="Search..." aria-label="Search">
+                  <button type="button" id="button" class="btn text-light" onclick="get_data()">&#128270</button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/icons/Account-icon.png" alt="hello" width="40px" height="40px">
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><img src="assets/icons/Account-icon.png"  id="account_profile" alt="" width="40px" height="40px"></li>
+                        <li><h5 class="text-center" id="account_name">User</h5></li>
+                        <li class="dropdown-divider"><hr></li>
+                        <li><a class="dropdown-item text" href="#">Cart</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li><a class="dropdown-item" href="loginpage.html" style="color: rgb(255, 0, 0);">&#11122 Sign Out</a></li>
+                        <!-- &#11120 - for sign out exit icon -->
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+        <main class="container">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                      class="active bg-light" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                      aria-label="Slide 2" class="bg-light"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                      aria-label="Slide 3" class="bg-light"></button>
+              </div>
+              <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                      <img src="assets/images/Home/carousel/carousel1.png" class="d-block w-100" alt="Car1" width="100%" height="100%">
+                      <div class="carousel-caption d-none d-md-block side">
+                          <h5 class="text-start fw-bold">Find Friends</h5>
+                          <p class="text-start col-md-8">Explore different kinds of People.</p>
+                          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                              <!-- <a class="btn me-md-2" href="searchpage.html" onclick="javascript:jap_or_kor = 'japanese';chosen_content();"></a> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                      <img src="assets/images/Home/carousel/carousel2.png" class="d-block w-100" alt="Car2" width="100%" height="100%">
+                      <div class="carousel-caption d-none d-md-block align-center">
+                          <!-- <h5 class="text-center fw-bold">Gallery</h5>
+                          <p class="text-center">Take a look in the pictures that i took from my life</p>
+                          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                              <a class="btn btn-primary me-md-2" href="#gallery">Go To Gallery?</a>
+                          </div> -->
+                      </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                      <img src="assets/images/Home/carousel/carousel3.png" class="d-block w-100" alt="Car3" width="100%" height="100%">
+                      <div class="carousel-caption d-none d-md-block side">
+                          <h5 class="text-end t  fw-bold">Hire Your Buddy</h5>
+                          <p class="text-end">Hire people to became your Buddy.</p>
+                          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <!-- <a class="btn  me-md-2" href="searchpage.html" onclick="javascript:jap_or_kor = 'korean';chosen_content();">Learn More?</a> -->
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev">
+                  <span class="text-dark h1" aria-hidden="true">&#10092</span>
+                  <span class="visually-hidden ">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next">
+                  <span class="text-dark h1" aria-hidden="true">&#10093</span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+
+
+
+      
+          <div class="context_parent mt-5">
+            <div class="context_holder">
+              <div class="context1 container ">
+                <h1>Short Explanation</h1>
+                <p>Hiring a buddy is a simple way to enjoy social activities with friendly company whenever you want. Whether you need someone to join you for coffee, events, or just to hang out, renting a buddy helps you avoid solo moments and create fun, memorable experiences with a new friend. It’s an easy, flexible way to expand your social circle and enjoy great company on your terms.</p>
+              </div>
+              <div class="context2 container">
+                <h1>History</h1>
+                <p>Throughout history, many people have hired companions to experience the warmth and connection of friendship, especially during times of loneliness, social isolation, or when they needed someone to share important moments with. These paid friendships allowed individuals to engage in activities together, enjoy meaningful conversations, and create memorable experiences. While the relationships were often temporary and transactional, they fulfilled a deep human need for companionship and emotional support.
+
+Hiring a friend provided comfort and a sense of belonging, helping people overcome feelings of solitude and enjoy life’s social moments. This practice appeared in various cultures in different forms, from professional companions to social partners, reflecting the universal desire for connection. Over time, this concept has evolved into modern platforms that make finding a buddy easier and more accessible, showing how essential friendship and companionship remain in human life.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bestselling mt-5">
+            <h1>Top Picks:</h1>
+            <div class="bestselling_holder mt-5 col-md-12">
+              <div class="card_holder">
+                <a href="#" onclick="javascript:content_of_full_page = 'makizushi';kind_of_food = 'sushi';dothis();">
+                    <div class="content_holder">
+                      <div class="img_holder">
+                        <img src="assets/images/People/European3.png" width="100%" height="100%">
+                      </div>
+                      <div class="title_holder_and_Context_holder">
+                        <h1>Will Stetson</h1>
+                        <p>₱50,000.00</p>
+                      </div>
+                    </div>
+                </a>
+              </div>
+              <div class="card_holder">
+                <a href="#" onclick="javascript:content_of_full_page = 'karaage';kind_of_food = 'fried';dothis();">
+                    <div class="content_holder">
+                      <div class="img_holder">
+                        <img src="assets/images/People/Asian1.png" width="100%" height="100%">
+                      </div>
+                      <div class="title_holder_and_Context_holder">
+                        <h1>Varis Sage</h1>
+                        <p>₱10,000.00</p>
+                      </div>
+                    </div>
+                </a>
+              </div>
+              <div class="card_holder">
+                <a href="#" onclick="javascript:content_of_full_page = 'bibimbap';kind_of_food = 'ricemeal';dothis();">
+                    <div class="content_holder">
+                      <div class="img_holder">
+                        <img src="assets/images/People/LGBTBlack.png" width="100%" height="100%">
+                      </div>
+                      <div class="title_holder_and_Context_holder">
+                        <h1>Novastella Novelite</h1>
+                        <p>₱7,000.00</p>
+                      </div>
+                    </div>
+                </a>
+              </div>
+              <div class="card_holder">
+                <a href="#" onclick="javascript:content_of_full_page = 'kimchi';kind_of_food = 'traditional';dothis();">
+                    <div class="content_holder">
+                      <div class="img_holder">
+                        <img src="assets/images/People/Blackgirl1.png" width="100%" height="100%">
+                      </div>
+                      <div class="title_holder_and_Context_holder">
+                        <h1>Bassiey Bloomington</h1>
+                        <p>₱3,000.00</p>
+                      </div>
+                    </div>
+                </a>
+              </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+
+      </main>
+      <footer>
+
+      </footer>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

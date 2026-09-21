@@ -1,0 +1,22 @@
+/* CSS Styling for About Page */
+
+.container .heading {
+    padding-top: 50px;
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+}
+.container .heading p {
+    font-size: 20pt;
+    text-align: justify;
+}
+.container .heading h1 {
+    font-size: 50pt;
+}
+
+.container .imgHolder {
+    height: 100%;
+    width: 95%;
+    padding-top: 50px;
+    margin: auto;
+}

@@ -1,0 +1,39 @@
+/* Css Styling for Contacts page */
+.container {
+  display: flex;
+  background: #f5f5f5;
+  padding: 40px;
+}
+
+.left {
+  width: 40%;
+  padding: 20px;
+}
+
+.right {
+  width: 60%;
+  padding: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+button {
+  background: #e6008d;
+  border: solid black 1px;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  transition: all .5s ease;
+}
+button:hover {
+    background: #ffffff;
+    border: solid 1px #e6008d;
+    color: #000000;
+}

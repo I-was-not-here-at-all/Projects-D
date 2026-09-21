@@ -1,0 +1,38 @@
+/* CSS Styling for Landing Page - Home or the index */
+.container .heading {
+    padding-top: 50px;
+    float: left;
+    width: 600px;
+
+}
+.container .heading p {
+    font-size: 20pt;
+    text-align: justify;
+}
+.container .heading h1 {
+    font-size: 50pt;
+}
+
+
+.container .heading .btn {
+    background: #e6008d;
+    margin-top: 20px;
+    font-size: 20pt;
+    width: 200px;
+    color: white;
+    border: black solid 1px;
+    border-radius: 20px;
+    transition: all .05s ease-in;
+}
+.container .heading .btn:hover {
+    background: #ffffff;
+    margin-top: 20px;
+    border: solid 1px #e6008d;
+    color: #000000;
+}
+
+.container .imgHolder {
+    float: right;
+    height: 100%;
+    width: 50%;
+}

@@ -1,0 +1,95 @@
+/* Landing page Global Variable Do not Work Here Unless the Code is Usable for 3 pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: white;
+    position: sticky;
+    box-shadow: 10px 1px 15px 1px fuchsia;
+}
+nav .container-fluid .collapse ul li .text-dark {
+    border-bottom: 1px solid rgba(106, 93, 93, 0.57);
+    transition: all .5s ease;
+}
+nav .container-fluid .collapse ul li .text-dark:hover {
+    border-bottom: 1px solid black;
+}
+
+nav .container-fluid .collapse .nav_button {
+    margin:auto
+}
+
+nav .container-fluid .collapse  form input {
+    border-radius: 100px;
+    padding-left: 52px;
+}
+nav .container-fluid .collapse  form button {
+    position: absolute;
+    right: 0px;
+    margin-right: 295px;
+    border-right: solid 1px rgba(0, 0, 0, 0.36);
+}
+nav .container-fluid .collapse .nav-item .dropdown-menu #account_profile {
+    margin-left: 43%;   
+}
+nav .container-fluid .collapse .nav-item .dropdown-menu {
+    transform: translateX(-212px); 
+    width: 300px; 
+}
+
+nav .container-fluid form ul li a {
+    color: fuchsia;
+}
+
+footer {
+    background-color: white;
+    border: 2px solid black;
+}
+
+footer .title_holder {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 1fr 1fr;
+}
+footer .title_holder h1{
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    text-align: center;
+    font-size: 30pt;
+}
+footer .title_holder .contextholder{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;  
+}
+footer .title_holder .contextholder p {
+    text-align: center;
+    font-size: 20pt;
+}
+
+footer .socials_and_branch_holder {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 200px;
+}
+footer .socials_and_branch_holder .socials{
+    grid-column: 2 / 2;
+
+}
+footer .socials_and_branch_holder .socials .social_link_holder a{
+    font-size: 20pt;
+}
+footer .socials_and_branch_holder .branch{
+    grid-column: 3 / 3;
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: 1fr 1fr;
+
+}
+footer .socials_and_branch_holder .title {
+    grid-column: 1 / 3;
+}
+footer .socials_and_branch_holder .branch .branch_holder p{
+    font-size: 20pt;
+}

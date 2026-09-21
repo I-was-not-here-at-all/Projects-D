@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="AKA-Group">
+        <meta name="description" content="Rent a Person you need in one click">
+        <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/LandingPage.css">
+        <link rel="stylesheet" href="css/loginpage.css">
+        <title>Rent a Buddy</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="navbar-Brand" href="#" style="padding-right: 10px;">
+                <img src="assets/icons/Logo.png" alt="" width="141px" height="50px">
+              </div>
+              <div class="navbar-Brand" href="#" style="padding-right: 30px;">
+                <h1></h1>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon h3 text-light">&#9776</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav_button me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="Contacts.html">Contacts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="About.html">About</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" id="searchForm" action="" method="GET">
+                  <ul class="navbar-nav nav_button me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active Login" aria-current="page" href="#">Login</a>
+                  </li>
+                </ul>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/icons/Account-icon.png" alt="hello" width="40px" height="40px">
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><img src="assets/icons/Account-icon.png"  id="account_profile" alt="" width="40px" height="40px"></li>
+                        <li><h5 class="text-center" id="account_name">Login / Create an Account</h5></li>
+                        <li class="dropdown-divider"><hr></li>
+                        <li><a class="dropdown-item text" href="#">Cart</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li><a class="dropdown-item" href="loginpage.html" style="color: rgb(0, 154, 0);">&#11122 Login</a></li>
+                        <!-- &#11120 - for sign out exit icon -->
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="return_holder">
+                    <a href="index.html" class="btn" onClick=""><span>&#60</span><span>&#60</span>Back</a> 
+                </div>
+                <div class="col-md-8 side_design">
+                    <div class="img">
+                        <div class="context_holder col-md-6">
+                          <h1 style="text-align: left;"><span style="font-size: 50pt;">Welcome to Rent a Buddy</span></h1>
+                            <h1>Log in or Sign up now to reconnect with your new friends and start planning your net adventure. Great times and good company are just a click away!</h1>
+                        </div>
+                        <div class="join_holder">
+                            
+                            <div class="register_btn">
+                                <a href="registrationpage.html" class="btn mt-3">Sign-Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 form_holder">
+                    <form>
+                        <div class="login_text">
+                            <h1 class="log_in_text">Login</h1>
+                        </div>
+                        <hr>
+                        <div class="username_holder">
+                            <label class="form-label login_label" for="Username">Username</label>
+                            <input type="text" id="Username" class="form-control text_box">
+                        </div>
+    
+                        <div class="password_holder mt-2 mb-2" >
+                            <label class="form-label login_label" for="Userpass">Password</label>
+                            <input type="password" id="Userpass" class="form-control text_box">
+                        </div>
+                        <div class="remember_me_holder mt-2 mb-2">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-label">Remember me</label>
+                        </div>
+                        <div class="buttons text-center mb-2">
+                            <a href="Home.html" class="btn">Login</a>
+                        </div>
+                        <div class="forgot_password_holder text-center">
+                            <a href="#">Forgot Password</a>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid">
+            
+          </footer>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="Js/loginpage.js"></script>
+    </body>
+</html>

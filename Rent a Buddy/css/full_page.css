@@ -1,0 +1,136 @@
+.container {
+    margin-top: 50px;
+}
+
+main .row .box1 .btn_back_holder {
+    position: absolute;
+    transform: translateY(-20px);
+}
+main .row .box1 .btn_back_holder a{
+    border: black 2px solid;
+    border-radius: 10px;
+    width: 90px;
+    background-color: #e6008d;
+    color: rgb(249, 234, 234);
+    transition: all .05s ease-in;
+}
+main .row .box1 .btn_back_holder a:hover{
+    border: #e6008d 2px solid;
+    background-color: rgb(249, 234, 234);
+    color: rgb(0, 0, 0);
+}
+
+main .row .box1 .row {
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+main .row .box1 .row .img_holder {
+    height: 500px;
+    margin-bottom: 20px;
+}
+main .row .box1 .row .img_holder img{
+    height: 100%;
+    width: 100%;
+}
+
+main .row .box2 .content_holder {
+    padding: 20px;
+}
+
+main .row .box1 .row .transaction_holder .transactions{
+    border: solid 1px black;
+    height: 600px;
+    padding: 20px;
+}
+main .row .box1 .row .transaction_holder .transactions .payments{
+    border: solid 1px black;
+    height: 80px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10px 2fr 15px 1fr  1fr 1fr 10px;
+    grid-template-rows: 3px 1fr 2px;
+    column-gap: 6px;
+}
+main .row .box1 .row .transaction_holder .transactions .payments .checkbox_holder{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+main .row .box1 .row .transaction_holder .transactions .payments .img1 {
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+    height: 50px;
+}
+main .row .box1 .row .transaction_holder .transactions .payments .img2 {
+    grid-column: 5 / 5;
+    grid-row: 2 / 2;
+    height: 50px;
+}
+main .row .box1 .row .transaction_holder .transactions .payments .text {
+    grid-column: 6 / 6;
+    grid-row: 2 / 2;
+    justify-items: center;
+    align-items: center;
+    
+
+}
+main .row .box1 .row .transaction_holder .transactions .payments .text p{
+    font-size: 14pt;
+    width: 40px;
+}
+
+
+main .row .box1 .row .transaction_holder .transactions .btn_holder a{
+    font-size: 20pt;
+    width: 300px;
+    margin-top: 50px;
+    border: black 2px solid;
+    border-radius: 20px;
+    margin-left: 90px;
+    background-color: #e6008d;
+    color: rgb(249, 234, 234);
+    transition: all .05s ease-in;
+   
+}
+main .row .box1 .row .transaction_holder .transactions .btn_holder a:hover{
+    border: #e6008d 2px solid;
+ 
+    background-color: rgb(249, 234, 234);
+    color: rgb(0, 0, 0);
+   
+}
+
+
+
+
+
+
+
+
+main .row .box2 .content_holder .main_content {
+    border: solid black 2px;
+    padding: 30px;
+}
+
+
+
+main .row .box2 .content_holder .main_content p {
+   text-align: center;
+   font-size: 30pt;
+}
+main .row .box2 .content_holder .main_content h3 {
+    text-align: center;
+    font-size: 27pt;
+}
+
+main .row .box2 .content_holder .main_content .description_holder .context_holder {
+    margin-top: 20px;
+    height: 400px;
+}
+main .row .box2 .content_holder .main_content .description_holder .context_holder p {
+    margin-top: 20px;
+    font-size: 25pt;
+    text-align: justify;
+}
+

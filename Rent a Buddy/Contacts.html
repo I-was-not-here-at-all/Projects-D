@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="AKA-Group">
+        <meta name="description" content="Rent a Person you need in one click">
+        <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/LandingPage.css">
+        <link rel="stylesheet" href="css/Contacts.css">
+        <!-- Landing Page -->
+        <title>Rent a Buddy</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="navbar-Brand" href="#" style="padding-right: 10px;">
+                <img src="assets/icons/Logo.png" alt="" width="141px" height="50px">
+              </div>
+              <div class="navbar-Brand" href="#" style="padding-right: 30px;">
+                <h1></h1>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon h3 text-light">&#9776</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav_button me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" style="border-bottom: solid 1px black;" aria-current="page" href="#">Contacts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="About.html">About</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" id="searchForm" action="" method="GET">
+                  <ul class="navbar-nav nav_button me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active Login" aria-current="page" href="#">Login</a>
+                  </li>
+                </ul>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/icons/Account-icon.png" alt="hello" width="40px" height="40px">
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><img src="assets/icons/Account-icon.png"  id="account_profile" alt="" width="40px" height="40px"></li>
+                        <li><h5 class="text-center" id="account_name">Login / Create an Account</h5></li>
+                        <li class="dropdown-divider"><hr></li>
+                        <li><a class="dropdown-item text" href="#">Cart</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li><a class="dropdown-item" href="loginpage.html" style="color: rgb(0, 154, 0);">&#11122 Login</a></li>
+                        <!-- &#11120 - for sign out exit icon -->
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+        <main class="container">
+
+            <div class="left">
+              <h1>CONTACT US</h1>
+              <p>We’d love to hear from you.<br>Send us a message!</p>
+              <p>rentabuddy@gmail.com</p>
+              <p>+63 991 234 5678</p>
+              <p>Online-Based Business</p>
+            </div>
+
+            <div class="right">
+              <input type="text" placeholder="Your Name">
+              <input type="email" placeholder="Your Email">
+              <input type="text" placeholder="Subject">
+              <textarea placeholder="Your Message"></textarea>
+              <button>Send Message</button>
+            </div>
+
+        </main>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
