@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Ghant Chart Calculator for CPU Scheduling">
+        <link rel="stylesheet" href="vendor/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <meta name="author" content="Group 1: Medina,Angeles,Salazar,Cura,Gonzales,Gatdula">
+        <title>CPU Scheduling Calculator</title>
+    </head>
+
+    <body>
+        <nav>
+            <h1 style="width: 100%;text-align: center;"><b>CPU Scheduling Calculator</b></h1>
+            <!-- navigation likns / drink responsibly -->
+            <ul>
+                <li>
+                    <div class="linkholder home">
+                        <a href="">  
+                            <p>Home</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <p>|</p>
+                </li>
+                <li>
+                    <div class="linkholder aboutUs">
+                        <a href="">
+                            <p>About Us</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main class="container-fluid">
+            <div class="left panel containers">
+                <h3>Input:</h3>
+                <div class="input">
+                    <div class="Algorithm_Group">
+                        <label><p style="text-align: left;font-size: 20px;margin-bottom: 2px;">Algorithm:</p></label>
+                        <select id="algorithmSelect" style="height: 40px;font-size: 18px;padding-left: 3px;">
+                            <option value="FCFS"><p>First Come First Serve, FCFS</p></option>
+                            <option value="SJF"><p>Shortest Job First, SJF</p></option>
+                            <option value="SRTF"><p>Shortest Remaining Time First, SRTF</p></option>
+                            <option value="RR"><p>Round Robin, RR</p></option>
+                            <option value="PREEMPTIVE"><p>Priority (Preemptive)</p></option>
+                            <option value="PREEMPTIVE"><p>Priority (Non-Preemptive)</p></option>
+                            <option value="---"><p>Valo?</p></option>
+                        </select>
+                    </div>
+                    <!-- other inputs: its purpose to display the inputs neccesarry depends on the algoritm used -->
+                    <!-- ps i will use jquerry here;to the designers tis the important part mess this up and we are fucked. -->
+                    <!-- Styling of other inputs can be found on the index.css -->
+                    <div class="other_inputs" id="inputHolder">
+                        <div class="Algorithm_Group">
+                            <label><p>Arrival Times:</p></label>
+                            <input type="search" id="Arrival_Times" placeholder="e g. 0 1 2 3 4 5" >
+                        </div>
+                        <div class="Algorithm_Group">
+                            <label><p style="text-align: left;font-size: 20px;margin-bottom: 2px;">Burst Times:</p></label>
+                            <input type="search" id="Burst_Times" placeholder="e g. 0 1 2 3 4 5" >
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="btnSolve" onclick="Solve()">Solve</button>
+                </div>
+            </div>
+            <!-- THis thing displays the chart itself it shows how it riterarry works  -->
+            <div class="right">
+                <div class="chart containers">
+                    <h3>Gantt Chart:</h3>
+                    <div class="gantt_chart" id="chartHolder">
+                        <div class="process_block">
+                            <p id="process">P1</p> 
+                            <p id="before">1</p>
+                            <p id="after">2</p>
+                        </div>
+                        <div class="process_block">
+                            <p id="process">P1</p> 
+                            <p id="after">2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table containers">
+                    <h3>Table:</h3>
+                </div>                
+            </div>
+            
+
+        </main>
+        <footer>
+
+
+        </footer>
+        <script src="vendor/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/ganttchart.js"></script>
+
+    </body>
+
+</html>
